@@ -11,7 +11,9 @@ import com.example.capapp.LoginPage;
 
 
 public class MainActivity extends ActionBarActivity {
-
+    
+	public static String user,pass,val,result="",points;
+	public static String checkInLat, checkInLong,parkNumber;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

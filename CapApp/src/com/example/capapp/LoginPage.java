@@ -23,7 +23,7 @@ public class LoginPage extends Activity {
     
     private EditText username,password;
     private Button login;
-    private static String user,pass,val,result="";
+    //private static String user,pass,val,result="";
 
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -52,13 +52,13 @@ private class sendPostData extends AsyncTask<String, Void, String>
 
  try{
 
-             user = username.getText().toString(); 
-             pass = password.getText().toString();
-             String link="http://192.168.1.91/capapp/samp.php";
+	 MainActivity.user = username.getText().toString(); 
+	 MainActivity.pass = password.getText().toString();
+             String link="http://198.21.204.2/capapp/samp.php";
                 String data  = URLEncoder.encode("username", "UTF-8") 
-                + "=" + URLEncoder.encode(user, "UTF-8");
+                + "=" + URLEncoder.encode(MainActivity.user, "UTF-8");
                 data += "&" + URLEncoder.encode("password", "UTF-8") 
-                + "=" + URLEncoder.encode(pass, "UTF-8");
+                + "=" + URLEncoder.encode(MainActivity.pass, "UTF-8");
                 URL url = new URL(link);
                 URLConnection conn = url.openConnection(); 
                 conn.setDoOutput(true); 
@@ -86,14 +86,16 @@ private class sendPostData extends AsyncTask<String, Void, String>
         //View your result here.
            if(result.equals("wrong"))
            {
+        	   
                Toast toast=Toast.makeText(LoginPage.this,"incorrect password", Toast.LENGTH_LONG);
                toast.show(); 
            }
            else
            {
+        	   MainActivity.points = result;
         	   Log.d("yp", result);
-               Intent intent=new Intent(LoginPage.this,ParkingMap.class);
-               intent.putExtra("child_name", result);
+               //Intent intent=new Intent(LoginPage.this,OccuPage.class);
+        	   Intent intent=new Intent(LoginPage.this,OccuPage.class);
                startActivity(intent);
            }
 

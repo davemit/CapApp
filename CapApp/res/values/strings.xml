@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">capapp</string>
+    <string name="app_name">Capapp</string>
     <string name="hello_world">hello world!</string>
     <string name="action_settings">settings</string>
     <string name="CapApp">CapApp</string>
@@ -11,5 +11,19 @@
     <string name="edit_password">Password</string>
     <string name="title_activity_menu_page">MenuPage</string>
     <string name="title_activity_parking_map">ParkingMap</string>
+    <string name="title_activity_occu_page">View Occupancy</string>
+    <string name="button_label">Parking Viewer</string>
+    <string name="button_nav">Navigate</string>
+    <string name="title_activity_db_exp">Recent Check-outs</string>
+    <string name="title_activity_jsonparser">JSONParser</string>
+    <string name="title_activity_park_db">ParkDb</string>
+    <string name="title_activity_park_num">Parking Space Number</string>
+    <string name="enter_num">302,303,205</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="chronometer_initial_format">Time</string>
+    <string name="title_activity_star">Star</string>
+    <string name="action_star">star_icon</string>
+    <string name="title_activity_park_serve">Parking Services</string>
+    <string name="title_activity_test">Test</string>
 
 </resources>
