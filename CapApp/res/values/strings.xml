@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">capapp</string>
+    <string name="hello_world">hello world!</string>
+    <string name="action_settings">settings</string>
+    <string name="CapApp">CapApp</string>
+    <string name="SignIn">Sign In</string>
+    <string name="title_activity_login_page">Log In</string>
+    <string name="edit_cuid">Your Login</string>
+    <string name="edit_password">Password</string>
+    <string name="title_activity_menu_page">MenuPage</string>
+    <string name="title_activity_parking_map">ParkingMap</string>
+
+</resources>
